@@ -49,7 +49,9 @@ model Message {
   updatedAt DateTime @updatedAt
 
   companionId String
-  userId      Companion @relation(fields: [companionId], references: [id], onDelete: Cascade)
+  userId     String
+
+  companion      Companion @relation(fields: [companionId], references: [id], onDelete: Cascade)
 
   @@index([companionId])
 }
