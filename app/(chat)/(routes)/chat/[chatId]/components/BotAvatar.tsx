@@ -6,7 +6,7 @@ interface BotAvatarProps {
 
 const BotAvatar = ({ src }: BotAvatarProps) => {
   return (
-    <Avatar>
+    <Avatar className="w-12 h-12">
       <AvatarImage src={src} />
     </Avatar>
   );
